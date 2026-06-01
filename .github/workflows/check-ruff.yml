@@ -25,9 +25,6 @@ jobs:
       - name: Install dependencies (including Ruff from dev group)
         run: uv sync --group dev
 
-      - name: Print python version'
-        run: python --version
-
       - name: Run Ruff Check (Linter)
         run: uv run ruff check .
 
