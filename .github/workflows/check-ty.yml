@@ -26,4 +26,4 @@ jobs:
         run: uv sync --group dev
 
       - name: Run ty checker
-        run: ty check .
+        run: uv run ty check .
