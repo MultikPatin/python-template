@@ -3,3 +3,10 @@ name = "python-template"
 version = "0.1.0"
 requires-python = ">=3.14"
 dependencies = []
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.6.0",
+    "ruff>=0.15.15",
+    "ty>=0.0.41",
+]
