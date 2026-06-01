@@ -1,4 +1,4 @@
-name: Ty Type Checking
+name: Ty Code Quality Checks
 
 on:
   pull_request:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   ruff:
-    name: Lint and Format
+    name: Type Checking
     runs-on: ubuntu-latest
 
     steps:
