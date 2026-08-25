@@ -22,8 +22,8 @@ jobs:
           version: "latest"
           cache-dependency-glob: "uv.lock"
 
-      - name: Install dependencies (including Ruff from dev group)
+      - name: Install dependencies (including Ty from dev group)
         run: uv sync --group dev
 
-      - name: Run ty checker
+      - name: Run ty checker (Type Checking)
         run: uv run ty check .
